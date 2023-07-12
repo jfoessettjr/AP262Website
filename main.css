@@ -1,27 +1,52 @@
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #04AA6D;
-    overflow: hidden;
+/* The sidebar menu */
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
   }
   
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
   }
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+
+  .sidenav a:hover {
+    color: #f1f1f1;
   }
   
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: grey;
-    color: white;
+
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    background-color: mediumspringgreen;
+  }
+  
+  font {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  body {
+    background-color: mediumspringgreen;
+  }
+
+  h1 {
+    color:white
+  }
+
+  li {
+    list-style: square;
+  }
+
+  h3 {
+    text-align: left;
   }
