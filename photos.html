@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>Photos</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function rgt() {
+                $('#sldr').animate({ left: "150" }, 10000, hider);
+            }
+            rgt();
+            function hider() {
+                $('#sldr').css ('left', '0px');
+                rgt();
+            }
+    });
+</script>
+</head>
+<body>
+    <div data-role="page" id="page2">
+        <div data-role="header">
+    <div class="main">
+    <h1>Interests</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <p>Welcome to the Site</p>
+    </div>
+    <div data-role="footer">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="index.html" class="ui-btn_active">Home</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="interests.html">Interests</a></li>
+        </ul>
+
+                </div>
+            </div>
+        </div>
+    <p>This bird shoots fire</p>
+    <form id="form1" runat="server">
+        <div>
+            <img id="sldr" src="images\Shooting.gif" style="position: absolute;"/>
+        </div>
+    </form>
+</body>
+</html>
