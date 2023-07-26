@@ -11,9 +11,9 @@
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 </head>
 
-<body style="background-color: mediumspringgreen;">
+<body style="background-color: white;">
   <header>
-    <div class="logo">Point Park University</div>
+    <div class="logo">Joel Foessett Jr</div>
     <ul class="navigation">
         <li><a href="index.html">ABOUT ME</a></li>
         <li><a href="photos.html">PHOTOS</a></li>
@@ -33,18 +33,27 @@
       </ul>
       </i>
     </div>
-  </header>
-    <link rel="stylesheet" href="styles\gallery.css">
-    <script src="JQuery\gallery.js"></script>
-        <div class="gallery" style="padding-top: 110px;">
-            <img src="images\NZ1HLW-BXzfSyH8o.jpg" title="Pioneers on Pittsburgh Television">
-            <img src="images\nrhc-2023_1_1000.jpg" title="Point Park Table and Students">
-            <img src="images\copa_kissmekate_1000.jpg" title="Point Park Students in play">
-            <img src="images\Berger10-3-2018_MensSocOnline-900x527.jpg" title="Men's Soccer">
-            <img src="images\opengala_pnctheatre_rolinson.jpg" title="Point Park Theatre">
-            <img src="images\wsoc10817.jpg" title="Women's Soccer">
-            <img src="images\pointpark_playhouselounge_backgrounds.jpg" title="Playhouse Lounge">
-        </div>
-</body>
+  </header>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+          function rgt() {
+              $('#sldr').animate({ left: "150" }, 10000, hider);
+          }
+          rgt();
+          function hider() {
+              $('#sldr').css('left', '0px');
+                  rgt();
+          }
+      });
+  </script>
+  
+  <p style="padding-top: 110px;padding-left: 16px;">This bird flys and shoots fire</p>
+  <form id="form1" runat="server">
+      <div>
+          <img id="sldr" src="images\Shooting.gif" style="position: absolute;" />
+      </div>
+  </form>
+    </body>
 
 </html>
