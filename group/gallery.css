@@ -23,8 +23,8 @@ body { background: #eee; }
   padding: 10px;
 
   /* (C2) COLORS */
-  border: 1px solid #ddd;
-  background: #fff;
+  border: 1px solid transparent;
+  background: transparent;
 
   /* (C3) IMAGE RESIZE */
   /* cover | contain | fill | scale-down */
