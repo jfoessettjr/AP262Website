@@ -23,8 +23,8 @@ body { background: #eee; }
   padding: 10px;
 
   /* (C2) COLORS */
-  border: 1px solid #ddd;
-  background: #fff;
+  border: 1px solid transparent;
+  background: transparent;
 
   /* (C3) IMAGE RESIZE */
   /* cover | contain | fill | scale-down */
@@ -58,4 +58,19 @@ body { background: #eee; }
 .gallery img.full:hover {
   z-index: 999;
   transform: none;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the image */
+img {
+  animation: fadeIn 1.5s ease-in-out;
 }
